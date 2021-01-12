@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&D Spell Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="heaader-container">
+      <h2 class="header-title">Spell Tracker</h2>
+    </div>
+    <div class="container">
+      <div class="player-spells">
+        <!-- List for Player's Chosen Spells -->
+        <!-- Organized by spell level, and maybe action type -->
+        <h3>Player Spellbook</h3>
+        <h4 class="level-header">Cantrips</h4>
+        <ul id="list_level-0" class="spell-level"></ul>
+        <h4 class="level-header">Level 1 Spells</h4>
+        <ul id="list_level-1" class="spell-level"></ul>
+        <h4 class="level-header">Level 2 Spells</h4>
+        <ul id="list_level-2" class="spell-level"></ul>
+        <h4 class="level-header">Level 3 Spells</h4>
+        <ul id="list_level-3" class="spell-level"></ul>
+        <h4 class="level-header">Level 4 Spells</h4>
+        <ul id="list_level-4" class="spell-level"></ul>
+        <h4 class="level-header">Level 5 Spells</h4>
+        <ul id="list_level-5" class="spell-level"></ul>
+        <h4 class="level-header">Level 6 Spells</h4>
+        <ul id="list_level-6" class="spell-level"></ul>
+        <h4 class="level-header">Level 7 Spells</h4>
+        <ul id="list_level-7" class="spell-level"></ul>
+        <h4 class="level-header">Level 8 Spells</h4>
+        <ul id="list_level-8" class="spell-level"></ul>
+        <h4 class="level-header">Level 9 Spells</h4>
+        <ul id="list_level-9" class="spell-level"></ul>
+        <br />
+        <button id="clear-all__button">Clear All</button>
+      </div>
+      <br />
+      <div class="add-spell__list">
+        <!-- List of all spells, filterable by class  -->
+        <form id="add-spells">
+          <h3>Spell List</h3>
+          <input
+            type="text"
+            id="spell-list__filter"
+            placeholder="Filter Spells"
+          />
+          <select
+            name="spell-list"
+            id="spell-list"
+            multiple="multiple"
+          ></select>
+          <button type="submit" id="add-spell__btn">Add Spells</button>
+          <button type="button" id="spell-info__btn">Spell Info</button>
+        </form>
+      </div>
+      <div class="spell-info__container">
+        <div id="spell-info__block">
+          <!-- <textarea
+            name="spell-info"
+            id="spell-info"
+            cols="30"
+            rows="10"
+            readonly
+          ></textarea> -->
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

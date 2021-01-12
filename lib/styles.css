@@ -1,0 +1,33 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+}
+
+.add-spell__list {
+  margin: 50px;
+}
+
+#add-spells {
+  display: flex;
+  flex-direction: column;
+}
+
+#spell-list {
+  height: 400px;
+}
+
+.player-spells {
+  font-size: 90%;
+}
+
+.spell-info {
+  max-width: 350px;
+  font-size: smaller;
+}
