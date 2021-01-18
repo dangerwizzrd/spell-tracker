@@ -1,5 +1,5 @@
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 li {
@@ -24,10 +24,28 @@ li {
 }
 
 .player-spells {
-  font-size: 90%;
+  font-size: 75%;
+}
+
+#spell-info__block {
+  max-height: 95vh;
+  overflow: scroll;
 }
 
 .spell-info {
   max-width: 350px;
   font-size: smaller;
+}
+
+.spellbook-info__btn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.spellbook-info__btn:hover {
+  color: rgb(19, 70, 163);
 }

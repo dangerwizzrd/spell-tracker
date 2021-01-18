@@ -43,11 +43,23 @@
         <!-- List of all spells, filterable by class  -->
         <form id="add-spells">
           <h3>Spell List</h3>
-          <input
-            type="text"
-            id="spell-list__filter"
-            placeholder="Filter Spells"
-          />
+          <select name="spell-list__sort" id="spell-list__sort">
+            <option value="" selected disabled>Sort Spells</option>
+            <option value="alphabetical">by Name</option>
+            <option value="byLevel">by Level</option>
+          </select>
+          <select name="class-filter" id="class-filter">
+            <option value="" selected>Select Class</option>
+            <option value="bard">Bard</option>
+            <option value="cleric">Cleric</option>
+            <option value="druid">Druid</option>
+            <option value="paladin">Paladin</option>
+            <option value="ranger">Ranger</option>
+            <option value="sorcerer">Sorcerer</option>
+            <option value="warlock">Warlock</option>
+            <option value="wizard">Wizard</option>
+          </select>
+          <input type="text" id="spell-list__filter" placeholder="Spell Name" />
           <select
             name="spell-list"
             id="spell-list"
@@ -58,15 +70,7 @@
         </form>
       </div>
       <div class="spell-info__container">
-        <div id="spell-info__block">
-          <!-- <textarea
-            name="spell-info"
-            id="spell-info"
-            cols="30"
-            rows="10"
-            readonly
-          ></textarea> -->
-        </div>
+        <div id="spell-info__block"></div>
       </div>
     </div>
     <script src="app.js"></script>
